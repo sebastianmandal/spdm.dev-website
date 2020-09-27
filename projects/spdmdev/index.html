@@ -557,297 +557,283 @@ body {
 .welcome-text #header {
   color: #3b3b3b;
   font-weight: lighter;
-}</style><title>spdm/home</title></head><body><style>
-  #navbar {
-    overflow: hidden;
-    background-color: #333;
-    position: sticky;
-    position: -webkit-sticky;
-    top: 0;
-    font-weight: normal;
-    height: 50px;
-  }
+}</style><title>spdm/home</title></head><body><style>#navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  font-weight: normal;
+  height: 50px;
+}
 
-  .navbar {
-    overflow: hidden;
-    background-color: #001824;
-  }
+.navbar {
+  overflow: hidden;
+  background-color: #001824;
+}
 
-  /* Style the navigation bar links */
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.navbar-name {
+  font-size: 20px;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  margin: 0;
+}
+
+.navbar-items-responsive a:hover,
+.dropdown:hover .dropbtn {
+  background-color: #0066cc;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #001824;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+#dropdown-content-btn {
+  text-align: left;
+  float: none;
+  color: #eeeeee;
+  padding: 12px 8px;
+  text-decoration: none;
+  display: block;
+}
+
+#dropdown-content-btn:hover {
+  background-color: #0066cc;
+  color: #efefef;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media screen and (max-width: 400px) {
   .navbar a {
-    float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 20px;
-    text-decoration: none;
-  }
-
-  .navbar-name {
-    font-size: 20px;
-  }
-
-  .dropdown {
-    float: left;
-    overflow: hidden;
-  }
-
-  .dropdown .dropbtn {
-    font-size: 16px;
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-    margin: 0;
-  }
-
-  .navbar-items-responsive a:hover,
-  .dropdown:hover .dropbtn {
-    background-color: #0066cc;
-  }
-
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #001824;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-  }
-
-  #dropdown-content-btn {
-    text-align: left;
     float: none;
-    color: #eeeeee;
-    padding: 12px 8px;
-    text-decoration: none;
-    display: block;
+    width: 100%;
+  }
+}
+
+.rainbowTrue {
+  -webkit-animation: rainbow 3s infinite;
+  -ms-animation: rainbow 3s infinite;
+  -o-animation: rainbow 3s infinite;
+  animation: rainbow 3s infinite;
+}
+
+.rainbow:hover {
+  -webkit-animation: rainbow 3s infinite;
+  -ms-animation: rainbow 3s infinite;
+  -o-animation: rainbow 3s infinite;
+  animation: rainbow 3s infinite;
+}
+
+@-webkit-keyframes rainbow {
+  0% {
+    background-color: #ff0000;
   }
 
-  #dropdown-content-btn:hover {
-    background-color: #0066cc;
-    color: #efefef;
+  10% {
+    background-color: #ff8000;
   }
 
-  .dropdown:hover .dropdown-content {
-    display: block;
+  20% {
+    background-color: #ffff00;
   }
 
-  @media screen and (max-width: 400px) {
-    .navbar a {
-      float: none;
-      width: 100%;
-    }
+  30% {
+    background-color: #80ff00;
   }
 
-  .rainbowTrue {
-    -webkit-animation: rainbow 3s infinite;
-    -ms-animation: rainbow 3s infinite;
-    -o-animation: rainbow 3s infinite;
-    animation: rainbow 3s infinite;
+  40% {
+    background-color: #00ff00;
   }
 
-  .rainbow:hover {
-    -webkit-animation: rainbow 3s infinite;
-    -ms-animation: rainbow 3s infinite;
-    -o-animation: rainbow 3s infinite;
-    animation: rainbow 3s infinite;
+  50% {
+    background-color: #00ff80;
   }
 
-  @-webkit-keyframes rainbow {
-    0% {
-      background-color: #ff0000;
-    }
-
-    10% {
-      background-color: #ff8000;
-    }
-
-    20% {
-      background-color: #ffff00;
-    }
-
-    30% {
-      background-color: #80ff00;
-    }
-
-    40% {
-      background-color: #00ff00;
-    }
-
-    50% {
-      background-color: #00ff80;
-    }
-
-    60% {
-      background-color: #00ffff;
-    }
-
-    70% {
-      background-color: #0080ff;
-    }
-
-    80% {
-      background-color: #0000ff;
-    }
-
-    90% {
-      background-color: #8000ff;
-    }
-
-    100% {
-      background-color: #ff0080;
-    }
+  60% {
+    background-color: #00ffff;
   }
 
-  @-ms-keyframes rainbow {
-    0% {
-      background-color: #ff0000;
-    }
-
-    10% {
-      background-color: #ff8000;
-    }
-
-    20% {
-      background-color: #ffff00;
-    }
-
-    30% {
-      background-color: #80ff00;
-    }
-
-    40% {
-      background-color: #00ff00;
-    }
-
-    50% {
-      background-color: #00ff80;
-    }
-
-    60% {
-      background-color: #00ffff;
-    }
-
-    70% {
-      background-color: #0080ff;
-    }
-
-    80% {
-      background-color: #0000ff;
-    }
-
-    90% {
-      background-color: #8000ff;
-    }
-
-    100% {
-      background-color: #ff0080;
-    }
+  70% {
+    background-color: #0080ff;
   }
 
-  @-o-keyframes rainbow {
-    0% {
-      background-color: #ff0000;
-    }
-
-    10% {
-      background-color: #ff8000;
-    }
-
-    20% {
-      background-color: #ffff00;
-    }
-
-    30% {
-      background-color: #80ff00;
-    }
-
-    40% {
-      background-color: #00ff00;
-    }
-
-    50% {
-      background-color: #00ff80;
-    }
-
-    60% {
-      background-color: #00ffff;
-    }
-
-    70% {
-      background-color: #0080ff;
-    }
-
-    80% {
-      background-color: #0000ff;
-    }
-
-    90% {
-      background-color: #8000ff;
-    }
-
-    100% {
-      background-color: #ff0080;
-    }
+  80% {
+    background-color: #0000ff;
   }
 
-  @keyframes rainbow {
-    0% {
-      background-color: #ff0000;
-    }
-
-    10% {
-      background-color: #ff8000;
-    }
-
-    20% {
-      background-color: #ffff00;
-    }
-
-    30% {
-      background-color: #80ff00;
-    }
-
-    40% {
-      background-color: #00ff00;
-    }
-
-    50% {
-      background-color: #00ff80;
-    }
-
-    60% {
-      background-color: #00ffff;
-    }
-
-    70% {
-      background-color: #0080ff;
-    }
-
-    80% {
-      background-color: #0000ff;
-    }
-
-    90% {
-      background-color: #8000ff;
-    }
-
-    100% {
-      background-color: #ff0080;
-    }
+  90% {
+    background-color: #8000ff;
   }
-</style>
-<div class="navbar">
-  <div class="navbar-items">
-    <div class="navbar-items-name"><a><strong>spdm.dev</strong></a></div>
-    <div class="navbar-items-responsive"><a class="rainbow" href="https://www.spdm.dev/">Home</a><a class="rainbow"
-        href="https://www.spdm.dev/projects">Projects</a>
-      <div class="dropdown"><button class="dropbtn rainbow">More...</button>
-        <div class="dropdown-content"><a class="rainbow" href="https://www.spdm.dev/contact.html"
-            id="dropdown-content-btn">Contact</a><a class="rainbow" href="#" id="dropdown-content-btn">About</a></div>
-      </div>
-    </div>
-  </div>
-</div><div class="main-content"><div class="welcome-text"><h1 id="header">This Website</h1><h2 id="header">Source code is available at <a href="https://github.com/sebastianmandal/spdm.dev-website">https://github.com/sebastianmandal/spdm.dev-website</a>.</h2></div></div></body></html>
+
+  100% {
+    background-color: #ff0080;
+  }
+}
+
+@-ms-keyframes rainbow {
+  0% {
+    background-color: #ff0000;
+  }
+
+  10% {
+    background-color: #ff8000;
+  }
+
+  20% {
+    background-color: #ffff00;
+  }
+
+  30% {
+    background-color: #80ff00;
+  }
+
+  40% {
+    background-color: #00ff00;
+  }
+
+  50% {
+    background-color: #00ff80;
+  }
+
+  60% {
+    background-color: #00ffff;
+  }
+
+  70% {
+    background-color: #0080ff;
+  }
+
+  80% {
+    background-color: #0000ff;
+  }
+
+  90% {
+    background-color: #8000ff;
+  }
+
+  100% {
+    background-color: #ff0080;
+  }
+}
+
+@-o-keyframes rainbow {
+  0% {
+    background-color: #ff0000;
+  }
+
+  10% {
+    background-color: #ff8000;
+  }
+
+  20% {
+    background-color: #ffff00;
+  }
+
+  30% {
+    background-color: #80ff00;
+  }
+
+  40% {
+    background-color: #00ff00;
+  }
+
+  50% {
+    background-color: #00ff80;
+  }
+
+  60% {
+    background-color: #00ffff;
+  }
+
+  70% {
+    background-color: #0080ff;
+  }
+
+  80% {
+    background-color: #0000ff;
+  }
+
+  90% {
+    background-color: #8000ff;
+  }
+
+  100% {
+    background-color: #ff0080;
+  }
+}
+
+@keyframes rainbow {
+  0% {
+    background-color: #ff0000;
+  }
+
+  10% {
+    background-color: #ff8000;
+  }
+
+  20% {
+    background-color: #ffff00;
+  }
+
+  30% {
+    background-color: #80ff00;
+  }
+
+  40% {
+    background-color: #00ff00;
+  }
+
+  50% {
+    background-color: #00ff80;
+  }
+
+  60% {
+    background-color: #00ffff;
+  }
+
+  70% {
+    background-color: #0080ff;
+  }
+
+  80% {
+    background-color: #0000ff;
+  }
+
+  90% {
+    background-color: #8000ff;
+  }
+
+  100% {
+    background-color: #ff0080;
+  }
+}</style><div class="navbar"><div class="navbar-items"><div class="navbar-items-name"><a><strong>spdm.dev</strong></a></div><div class="navbar-items-responsive"><a class="rainbow" href="https://www.spdm.dev/">Home</a><a class="rainbow" href="https://www.spdm.dev/projects">Projects</a><div class="dropdown"><button class="dropbtn rainbow">More...</button><div class="dropdown-content"><a class="rainbow" href="https://www.spdm.dev/contact.html" id="dropdown-content-btn">Contact</a><a class="rainbow" href="#" id="dropdown-content-btn">About</a></div></div></div></div></div><div class="main-content"><div class="welcome-text"><h1 id="header">This Website</h1><h2 id="header">Source code is available at <a href="https://github.com/sebastianmandal/spdm.dev-website">https://github.com/sebastianmandal/spdm.dev-website</a>.</h2></div></div></body></html>
