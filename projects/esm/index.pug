@@ -1,0 +1,19 @@
+//- index.pug
+//- pug -w ./ -o ./
+doctype html
+
+html
+  head
+    style
+      include ../css/index.scss
+      include ../css/main.scss
+      include ../css/navbar.scss
+      include ../css/projects.scss
+    title spdm/home
+  body
+    include ../navbar.html
+
+    .main-content
+      .welcome-text
+        h1#header Discord "EasyServerManagement" bot
+        h2#header I developed this bot to simplify the process of managing a Discord server/guild. It is a "command line" (chat) tool which allows you to write simple commands to perform actions in your server. The source code for my bot is available at #[a(target="https://github.com/sebastianmandal/easyservermanagement/") https://github.com/sebastianmandal/easyservermanagement].

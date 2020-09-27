@@ -1,0 +1,20 @@
+//- index.pug
+//- pug -w ./ -o ./
+doctype html
+
+html
+  head
+    style
+      include css/main.scss
+      include css/index.scss
+    title spdm/home
+  body
+    include navbar.html
+
+    .main-content
+      .welcome-text
+        img(src="spdm.dev-logo 4/vector/default-monochrome-black.svg" width="255px" style="padding: 25px;")
+        h2.strong#header Sebastian Pritchard-Davies Mandal
+        h1#header Swift, Javascript, Python, Django, etc.
+      .welcome-text
+        a(href="https://www.spdm.dev/projects")#browse-btn.rainbow Browse Projects

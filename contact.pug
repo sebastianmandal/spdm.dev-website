@@ -1,0 +1,27 @@
+//- contact.pug
+//- pug -w ./ -o ./
+doctype html
+
+html
+  head
+    style
+      include css/main.scss
+      include css/contact.scss
+      include css/navbar.scss
+    title spdm/home
+  body
+    include navbar.html
+
+    .main-content
+      .welcome-text
+        img(src="spdm.dev-logo 4/vector/default-monochrome-black.svg" width="255px" style="padding: 25px;")
+        h1.strong#header Contact:
+        .row
+          .column
+            a(href="https://www.github.com/sebastianmandal") #[img(src="socialsvgs/github.svg")]
+          .column
+            a(href="https://www.instagram.com/soysebm") #[img(src="socialsvgs/instagram.svg")]
+          .column
+            a(href="https://www.twitter.com/pritchardmandal") #[img(src="socialsvgs/twitter.svg")]
+          .column
+            a(href="https://www.twitter.com/pritchardmandal") #[img(src="socialsvgs/mail-dot-ru.svg")]

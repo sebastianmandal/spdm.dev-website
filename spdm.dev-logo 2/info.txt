@@ -1,0 +1,14 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: sofiapro-light
+font link: https://www.fontspring.com/fonts/mostardesign/sofia-pro/sofia-pro-light
+font author: Mostardesign
+font author site: http://www.motyfo.com/
+
+
+icon designer: useiconic.com
+icon designer link: /useiconic.com
+        
+{"bg":"transparent","icon":"#488eff","font":"#2e3034","slogan":"#424448"}
+      

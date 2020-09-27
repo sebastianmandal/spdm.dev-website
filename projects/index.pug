@@ -1,0 +1,21 @@
+//- projects.pug
+//- pug -w ./ -o ./
+doctype html
+
+html
+  head
+    style
+      include css/main.scss
+      include css/projects.scss
+      include css/navbar.scss
+    title spdm/home
+  body
+    include navbar.html
+
+    .main-content
+      .welcome-text
+        h1#header Projects
+
+        a(href='esm'): h2#project-product Discord Bot "EasyServerManagement"
+        a(href='qc'): h2#project-product Quadratics Calculator using Python, JS
+        a(href='/'): h2#project-product Website for a local Norwegian company (coming)
