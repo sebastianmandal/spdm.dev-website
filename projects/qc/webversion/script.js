@@ -1,7 +1,7 @@
 function factor() {
-  var a = parseInt(document.getElementById("fa").value);
-  var b = parseInt(document.getElementById("fb").value);
-  var c = parseInt(document.getElementById("fc").value);
+  var a = parseFloat(document.getElementById("fa").value);
+  var b = parseFloat(document.getElementById("fb").value);
+  var c = parseFloat(document.getElementById("fc").value);
 
   console.log(a);
   console.log(b);
@@ -39,9 +39,9 @@ function factor() {
 }
 
 function expand() {
-  var a = parseInt(document.getElementById("ea").value);
-  var b = parseInt(document.getElementById("eb").value);
-  var c = parseInt(document.getElementById("ec").value);
+  var a = parseFloat(document.getElementById("ea").value);
+  var b = parseFloat(document.getElementById("eb").value);
+  var c = parseFloat(document.getElementById("ec").value);
 
   var expanded = "Expanded: " + a + "x^2 + " + (b + c) * a + "x + " + (b * c) * a;
   var answer1 = document.getElementById("eanswer1").innerHTML = (expanded);
