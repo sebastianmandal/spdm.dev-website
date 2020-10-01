@@ -1,0 +1,22 @@
+//- index.pug
+//- pug -w ./ -o ./
+doctype html
+
+html
+  head
+    style
+      include ../../css/index.css
+      include ../../css/main.css
+      include ../../css/navbar.css
+      include ../../css/projects.css
+    title spdm/home
+  body
+    include ../../navbar.html
+
+    .main-content
+      .welcome-text
+        h1#header Complete the square (find x)
+        h2#header I made this calculator using vanilla Javascript and Pug (html).
+        h2#header I made this because we are doing this in school and I wanted to challenge myself meanwhile demonstrating my understanding of the subject.
+        h2#header Test online version #[a(href="./webversion") here].
+        h2#header Source code is available at #[a(href="https://github.com/sebastianmandal/CompleteTheSquare") https://github.com/sebastianmandal/CompleteTheSquare].
